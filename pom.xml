@@ -20,6 +20,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
   <build>
     <finalName>webapp</finalName>
 	<plugins>
@@ -28,6 +29,16 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.3</version>
        </plugin>
+	   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <executions>
+        <execution>
+            <id>default-testResources</id>
+            <phase>none</phase>
+        </execution>
+    </executions>
+</plugin>
     </plugins>
   </build>
   
