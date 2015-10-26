@@ -4,7 +4,7 @@
   <groupId>com.sudhu</groupId>
   <artifactId>webapp</artifactId>
   <packaging>war</packaging>
-  <version>2.0-SNAPSHOT</version>
+  <version>3.0-SNAPSHOT</version>
   <name>webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
@@ -29,28 +29,19 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.3</version>
        </plugin>
-	   <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-resources-plugin</artifactId>
-    <executions>
-        <execution>
-            <id>default-testResources</id>
-            <phase>none</phase>
-        </execution>
-    </executions>
-</plugin>
+	   
     </plugins>
   </build>
   
   <distributionManagement>
 	<repository>
 		<id>deploymentRepo</id>
-		<name>Internal Releases</name>
+		<name>Releases</name>
 		<url>http://localhost:8081/nexus/content/repositories/releases/</url>
 	</repository>	
 	<snapshotRepository>
 		<id>deploymentRepo</id>
-		<name>Internal Releases</name>
+		<name>Snapshots</name>
 		<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
 	</snapshotRepository>
   </distributionManagement>
